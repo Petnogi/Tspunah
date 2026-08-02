@@ -7,6 +7,9 @@ on:
     paths:
       - 'source.list'  # Робот следит только за этим файлом
 
+permissions:
+  contents: write
+
 jobs:
   clean:
     runs-on: ubuntu-latest
