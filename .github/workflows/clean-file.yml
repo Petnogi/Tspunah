@@ -1,0 +1,33 @@
+name: Clean Address List
+
+on:
+  push:
+    branches:
+      - main  # Замените на master, если ваша ветка называется так
+    paths:
+      - 'source.list'  # Робот сработает только при изменении этого файла
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Разрешаем роботу делать изменения в репозитории
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Process file
+        run: |
+          # 1. Удаляем строки, начинающиеся с # (комментарии)
+          # 2. Удаляем пустые строки
+          # 3. Удаляем одиночные латинские буквы (оглавление A, B, C)
+          grep -v '^#' source.txt | grep -v '^$' | grep -v -E '^[A-Za-z]$' > addresses.list
+
+      - name: Commit and Push cleaned file
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@://github.com"
+          git add addresses.txt
+          # Проверяем, изменился ли файл, чтобы не делать пустых коммитов
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean address list" && git push)
