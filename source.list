@@ -1,0 +1,119 @@
+# Ip.me
+server=/ip.me/127.0.0.1#5353
+
+# 4PDA
+server=/4pda.to/127.0.0.1#5353
+
+# ADS
+server=/www.ghostery.com/127.0.0.1#5353
+server=/greasyfork.org/127.0.0.1#5353
+
+# B
+
+# ChatGPT
+server=/chatgpt.com/127.0.0.1#5353
+server=/openai.com/127.0.0.1#5353
+
+# D
+
+# E
+
+# F
+
+# Google
+server=/ggpht.com/127.0.0.1#5353
+server=/ytimg.com/127.0.0.1#5353
+server=/doubleclick.net/127.0.0.1#5353
+server=/gemini.google.com/127.0.0.1#5353
+server=/play.google.com/127.0.0.1#5353
+server=/news.google.com/127.0.0.1#5353
+server=/googleapis.com/127.0.0.1#5353
+server=/googleusercontent.com/127.0.0.1#5353
+server=/lh3.googleusercontent.com/127.0.0.1#5353
+server=/chromewebstore.google.com/127.0.0.1#5353
+server=/gvt1.com/127.0.0.1#5353
+
+# Gopro
+server=/gopro.com/127.0.0.1#5353
+server=/gw2ru.com/127.0.0.1#5353
+
+# H
+server=/happp.online/127.0.0.1#5353
+
+# Instagram
+server=/instagram.com/127.0.0.1#5353
+server=/cdninstagram.com/127.0.0.1#5353
+server=/fbcdn.net/127.0.0.1#5353
+server=/fb.com/127.0.0.1#5353
+server=/facebook.com/127.0.0.1#5353
+
+# J
+
+# K
+
+# Lordfilm
+server=/lordfilm.org/127.0.0.1#5353
+server=/lordfilm.fi/127.0.0.1#5353
+server=/vot.lordfilm333.top/127.0.0.1#5353
+
+
+# N
+server=/ntc.party/127.0.0.1#5353
+
+# M
+
+# Openwrt
+#server=/openwrt.org/127.0.0.1#5353
+
+# P
+server=/psiphon.ca/127.0.0.1#5353
+
+# Q
+
+# Rutracker
+server=/rutracker.org/127.0.0.1#5353
+server=/rutracker.cc/127.0.0.1#5353
+
+# Speedtest
+server=/www.speedtest.net/127.0.0.1#5353
+server=/speedtest-fkt-eqx.retn.net.prod.hosts.ooklaserver.net/127.0.0.1#5353
+server=/speedtest.eu-fr.kamatera.com.prod.hosts.ooklaserver.net/127.0.0.1#5353
+server=/fra.speedtest.clouvider.net.prod.hosts.ooklaserver.net/127.0.0.1#5353
+server=/speedtest1.synlinq.de.prod.hosts.ooklaserver.net/127.0.0.1#5353
+
+# Shademap
+server=/shademap.app//127.0.0.1#5353
+
+# Twitter
+server=/twitter.com/127.0.0.1#5353
+server=/x.com/127.0.0.1#5353
+server=/twimg.com/127.0.0.1#5353
+server=/t.co/127.0.0.1#5353
+
+# Telegram
+server=/telegram.org/127.0.0.1#5353
+server=/t.me/127.0.0.1#5353
+server=/telesco.pe/127.0.0.1#5353
+server=/githubusercontent.com/127.0.0.1#5353
+server=/web.telegram.org/127.0.0.1#5353
+# Ubuntu-touch
+server=/www.ubuntu-touch.io/127.0.0.1#5353
+
+# V
+
+# WhatsApp
+server=/whatsapp.net/127.0.0.1#5353
+
+# Wikimapia
+server=/wikimapia.org/127.0.0.1#5353
+
+# X
+
+# YouTube
+server=/youtube.com/127.0.0.1#5353
+server=/youtu.be/127.0.0.1#5353
+server=/googlevideo.com/127.0.0.1#5353
+server=/youtube.googleapis.com/127.0.0.1#5353
+server=/youtubei.googleapis.com/127.0.0.1#5353
+
+# Z
