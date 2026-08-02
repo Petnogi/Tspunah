@@ -95,6 +95,7 @@ server=/t.me/127.0.0.1#5353
 server=/telesco.pe/127.0.0.1#5353
 server=/githubusercontent.com/127.0.0.1#5353
 server=/web.telegram.org/127.0.0.1#5353
+
 # Ubuntu-touch
 server=/www.ubuntu-touch.io/127.0.0.1#5353
 
