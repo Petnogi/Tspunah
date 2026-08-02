@@ -1,17 +1,17 @@
-name: Clean Address List
+name: Clean and Wrap Address List
 
 on:
   push:
     branches:
       - main  # Замените на master, если ваша ветка называется так
     paths:
-      - 'source.list'  # Робот сработает только при изменении этого файла
+      - 'source.list'  # Робот следит только за этим файлом
 
 jobs:
   clean:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Разрешаем роботу делать изменения в репозитории
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -19,15 +19,15 @@ jobs:
 
       - name: Process file
         run: |
-          # 1. Удаляем строки, начинающиеся с # (комментарии)
+          # 1. Удаляем строки-комментарии (начинаются с #)
           # 2. Удаляем пустые строки
-          # 3. Удаляем одиночные латинские буквы (оглавление A, B, C)
-          grep -v '^#' source.list | grep -v '^$' | grep -v -E '^[A-Za-z]$' > addresses.list
+          # 3. Удаляем строки из одной латинской буквы (оглавление)
+          # 4. Оборачиваем оставшиеся строки в start/ и /finish
+          sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' -e 's/^/start\//' -e 's/$/\/finish/' source.list > addresses.list
 
       - name: Commit and Push cleaned file
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@://github.com"
           git add addresses.list
-          # Проверяем, изменился ли файл, чтобы не делать пустых коммитов
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean address list" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean and wrap address list" && git push)
