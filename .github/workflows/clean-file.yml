@@ -26,7 +26,7 @@ jobs:
           # 2. Удаляем пустые строки
           # 3. Удаляем строки из одной латинской буквы (оглавление)
           # 4. Оборачиваем оставшиеся строки в start/ и /finish
-          sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' -e 's/^/start\//' -e 's/$/\/finish/' source.list > addresses.list
+          sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' -e 's/^/server=\//' -e 's/$/\/127.0.0.1#5353/' source.list > addresses.list
 
       - name: Commit and Push cleaned file
         run: |
