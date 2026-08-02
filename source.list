@@ -35,7 +35,6 @@ server=/gvt1.com/127.0.0.1#5353
 
 # Gopro
 server=/gopro.com/127.0.0.1#5353
-server=/gw2ru.com/127.0.0.1#5353
 
 # H
 server=/happp.online/127.0.0.1#5353
