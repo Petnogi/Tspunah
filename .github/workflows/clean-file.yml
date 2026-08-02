@@ -22,7 +22,7 @@ jobs:
           # 1. Удаляем строки, начинающиеся с # (комментарии)
           # 2. Удаляем пустые строки
           # 3. Удаляем одиночные латинские буквы (оглавление A, B, C)
-          grep -v '^#' source.txt | grep -v '^$' | grep -v -E '^[A-Za-z]$' > addresses.list
+          grep -v '^#' source.list | grep -v '^$' | grep -v -E '^[A-Za-z]$' > addresses.list
 
       - name: Commit and Push cleaned file
         run: |
