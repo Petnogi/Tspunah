@@ -1,15 +1,15 @@
 # 4PDA
-server=/4pda.to/127.0.0.1#5353
+4pda.to
 
 # ADS
-server=/www.ghostery.com/127.0.0.1#5353
-server=/greasyfork.org/127.0.0.1#5353
+www.ghostery.com
+greasyfork.org
 
 # B
 
 # ChatGPT
-server=/chatgpt.com/127.0.0.1#5353
-server=/openai.com/127.0.0.1#5353
+chatgpt.com
+openai.com
 
 # D
 
@@ -18,99 +18,99 @@ server=/openai.com/127.0.0.1#5353
 # F
 
 # Google
-server=/ggpht.com/127.0.0.1#5353
-server=/ytimg.com/127.0.0.1#5353
-server=/doubleclick.net/127.0.0.1#5353
-server=/gemini.google.com/127.0.0.1#5353
-server=/play.google.com/127.0.0.1#5353
-server=/news.google.com/127.0.0.1#5353
-server=/googleapis.com/127.0.0.1#5353
-server=/googleusercontent.com/127.0.0.1#5353
-server=/lh3.googleusercontent.com/127.0.0.1#5353
-server=/chromewebstore.google.com/127.0.0.1#5353
-server=/gvt1.com/127.0.0.1#5353
+ggpht.com
+ytimg.com
+doubleclick.net
+gemini.google.com
+play.google.com
+news.google.com
+googleapis.com
+googleusercontent.com
+lh3.googleusercontent.com
+chromewebstore.google.com
+gvt1.com
 
 # Gopro
-server=/gopro.com/127.0.0.1#5353
+gopro.com
 
 # H
-server=/happp.online/127.0.0.1#5353
+happp.online
 
 # Instagram
-server=/instagram.com/127.0.0.1#5353
-server=/cdninstagram.com/127.0.0.1#5353
-server=/fbcdn.net/127.0.0.1#5353
-server=/fb.com/127.0.0.1#5353
-server=/facebook.com/127.0.0.1#5353
+instagram.com
+cdninstagram.com
+fbcdn.net
+fb.com
+facebook.com
 
 # J
 
 # K
 
 # Lordfilm
-server=/lordfilm.org/127.0.0.1#5353
-server=/lordfilm.fi/127.0.0.1#5353
-server=/vot.lordfilm333.top/127.0.0.1#5353
+lordfilm.org
+lordfilm.fi
+vot.lordfilm333.top
 
 
 # N
-server=/ntc.party/127.0.0.1#5353
+ntc.party
 
 # M
 
 # Openwrt
-#server=/openwrt.org/127.0.0.1#5353
+openwrt.org
 
 # P
-server=/psiphon.ca/127.0.0.1#5353
+psiphon.ca
 
 # Q
 
 # Rutracker
-server=/rutracker.org/127.0.0.1#5353
-server=/rutracker.cc/127.0.0.1#5353
+rutracker.org
+rutracker.cc
 
 # Speedtest
-server=/www.speedtest.net/127.0.0.1#5353
-server=/speedtest-fkt-eqx.retn.net.prod.hosts.ooklaserver.net/127.0.0.1#5353
-server=/speedtest.eu-fr.kamatera.com.prod.hosts.ooklaserver.net/127.0.0.1#5353
-server=/fra.speedtest.clouvider.net.prod.hosts.ooklaserver.net/127.0.0.1#5353
-server=/speedtest1.synlinq.de.prod.hosts.ooklaserver.net/127.0.0.1#5353
+www.speedtest.net
+speedtest-fkt-eqx.retn.net.prod.hosts.ooklaserver.net
+speedtest.eu-fr.kamatera.com.prod.hosts.ooklaserver.net
+fra.speedtest.clouvider.net.prod.hosts.ooklaserver.net
+speedtest1.synlinq.de.prod.hosts.ooklaserver.net
 
 # Shademap
-server=/shademap.app//127.0.0.1#5353
+shademap.app
 
 # Twitter
-server=/twitter.com/127.0.0.1#5353
-server=/x.com/127.0.0.1#5353
-server=/twimg.com/127.0.0.1#5353
-server=/t.co/127.0.0.1#5353
+twitter.com
+x.com
+twimg.com
+t.co
 
 # Telegram
-server=/telegram.org/127.0.0.1#5353
-server=/t.me/127.0.0.1#5353
-server=/telesco.pe/127.0.0.1#5353
-server=/githubusercontent.com/127.0.0.1#5353
-server=/web.telegram.org/127.0.0.1#5353
+telegram.org
+t.me
+telesco.pe
+githubusercontent.com
+web.telegram.org
 
 # Ubuntu-touch
-server=/www.ubuntu-touch.io/127.0.0.1#5353
+www.ubuntu-touch.io
 
 # V
 
 # WhatsApp
-server=/whatsapp.net/127.0.0.1#5353
+whatsapp.net
 
 # Wikimapia
-server=/wikimapia.org/127.0.0.1#5353
+wikimapia.org
 
 # X
 
 # YouTube
-server=/youtube.com/127.0.0.1#5353
-server=/youtu.be/127.0.0.1#5353
-server=/googlevideo.com/127.0.0.1#5353
-server=/youtube.googleapis.com/127.0.0.1#5353
-server=/youtubei.googleapis.com/127.0.0.1#5353
+youtube.com
+youtu.be
+googlevideo.com
+youtube.googleapis.com
+youtubei.googleapis.com
 
 # Z
