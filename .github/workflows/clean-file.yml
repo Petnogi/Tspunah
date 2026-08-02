@@ -1,11 +1,11 @@
-name: Clean and Wrap Address List
+name: Clean, De-duplicate and Wrap Address List
 
 on:
   push:
     branches:
       - main  # Замените на master, если ваша ветка называется так
     paths:
-      - 'source.list'  # Робот следит только за этим файлом
+      - 'source.list'
 
 permissions:
   contents: write
@@ -13,24 +13,23 @@ permissions:
 jobs:
   clean:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Process file
         run: |
-          # 1. Удаляем строки-комментарии (начинаются с #)
-          # 2. Удаляем пустые строки
-          # 3. Удаляем строки из одной латинской буквы (оглавление)
-          # 4. Оборачиваем оставшиеся строки в start/ и /finish
-          sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' -e 's/^/server=\//' -e 's/$/\/127.0.0.1#5353/' source.list > addresses.list
+          # 1. Удаляем комментарии, пустые строки и оглавление с помощью sed
+          # 2. Удаляем дубликаты с сохранением порядка строк с помощью awk
+          # 3. Оборачиваем результат в start/ и /finish с помощью sed
+          sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' source.list | \
+          awk '!seen[$0]++' | \
+          sed -e 's/^/start\//' -e 's/$/\/finish/' > addresses.list
 
       - name: Commit and Push cleaned file
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@://github.com"
           git add addresses.list
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean and wrap address list" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-clean, de-duplicate and wrap address list" && git push)
