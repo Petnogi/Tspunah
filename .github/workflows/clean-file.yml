@@ -22,10 +22,10 @@ jobs:
         run: |
           # 1. Удаляем комментарии, пустые строки и оглавление с помощью sed
           # 2. Удаляем дубликаты с сохранением порядка строк с помощью awk
-          # 3. Оборачиваем результат в start/ и /finish с помощью sed
+          # 3. Оборачиваем результат в server=/ и /127.0.0.1#5353 с помощью sed
           sed -e '/^#/d' -e '/^$/d' -e '/^[A-Za-z]$/d' source.list | \
           awk '!seen[$0]++' | \
-          sed -e 's/^/start\//' -e 's/$/\/finish/' > addresses.list
+          sed -e 's/^/server=\//' -e 's/$/\/127.0.0.1#5353/' > addresses.list
 
       - name: Commit and Push cleaned file
         run: |
